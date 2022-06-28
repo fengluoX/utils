@@ -1,6 +1,6 @@
 {
   "name": "@fengluo/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "工具函数库",
   "author": "",
   "files": [
@@ -8,9 +8,10 @@
   ],
   "scripts": {
     "build": "rm -rf dist && rollup --config rollup.config.js",
-    "postbuild": "tsc  --emitDeclarationOnly --declaration --outDir dist/typing"
+    "postbuild": "tsc  --emitDeclarationOnly --declaration --outDir dist/typings"
   },
   "main": "./dist/esm",
+  "typings": "./dist/typings",
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/plugin-transform-runtime": "^7.18.5",
